@@ -1,0 +1,14 @@
+<div class="todo__block">
+       <div class="task__form__group">
+        <input type="text" placeholder="Bugun nima qilishingiz kerak?" [(ngModel)]="newTodo"/>
+        <button class="add__task__btn" (click)="saveTodo()">Qo'shish</button>
+       </div>
+      <table class="task__table">
+        <tbody class="task__body">
+          <tr class="task__list" *ngFor="let todo of todos; let i = index">
+            <td class="{{(!todo.isCompleted) ? 'done' : ''}}"><input type="checkbox"  (click)="done(i)">{{todo.name}}</td>
+            <td class="{{(!todo.isCompleted) ? 'done' : ''}}" (click)="remove(i)"><span nz-icon nzType="close-circle" nzTheme="outline"></span></td>
+          </tr>
+        </tbody>
+      </table>
+</div>

@@ -1,0 +1,82 @@
+.todo__block {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+
+    .task__form__group {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+
+        input {
+            width: 80%;
+            height: auto;
+            padding: 10px 15px;
+            background: none;
+            border: 1px solid #000;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+
+            &::placeholder {
+                font-size: 16px;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            width: 20%;
+            height: auto;
+            padding: 10px 15px;
+            background-color: #2bb59d;
+            color: #fff;
+            font-size: 14px;
+            border: 1px solid #000;
+            border-left: none;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+    }
+
+    .task__table {
+        width: 100%;
+        height: auto;
+        .task__body {
+            width: 100%;
+            height: auto;
+            .task__list {
+                width: 100%;
+                height: auto;
+                padding: 10px;
+                padding: 10px 5px !important;
+                border-bottom: 1px solid #000;
+                display: inline-block;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                td {
+                    font-family: system-ui;
+                    letter-spacing: 1px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    input {
+                        margin-right: 10px;
+                        transform: translateY(3px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.done {
+    text-decoration: line-through;
+    color: #2bb59d;
+}
+
+[nz-row] {
+    background-color: rgba(128, 128, 128, 0.08);
+}

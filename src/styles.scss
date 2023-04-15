@@ -1,1 +1,281 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: system-ui;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    z-index: 9999;
+    background-color: rgba($color: #000000, $alpha: 0.09);
+    .main__navbars {
+        .nav__lists {
+            .nav__lists__item {
+                display: inline;
+                a {
+                    color: #000;
+                    padding: 10px 15px;
+                    text-decoration: none;
+                    transition: all 0.5s ease;
+                    &:hover {
+                        color: #0000ff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/****************************************************************
+    responsive styles start
+*****************************************************************/
+@media (min-width: 1199.99px) and (max-width: 1399.99px) {
+    .main__form__section {
+        .form__block {
+            .company__image {
+                justify-content: center;
+                img {
+                    width: 600px;
+                    height: 600px;
+                }
+            }
+        }
+    }
+
+    .inner-box {
+        .widget {
+            span {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                color: #fff;
+                font-size: 30px;
+            }
+    
+            .witget__title {
+                color: #fff;
+                font-size: 22px;
+                letter-spacing: 1px;
+                margin-bottom: 5px;
+            }
+            .widget__balanc {
+                color: #fff;
+                font-size: 32px;
+                letter-spacing: 1px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+@media (min-width: 991.99px) and (max-width: 1199.99px) {
+    .main__form__section {
+        .container {
+            .form__block {
+                display: grid;
+                grid-template-columns: 0.7fr 1.3fr;
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+    
+                .forms {
+                  div {
+                    .title {
+                        font-size: 45px;
+                    }
+                  }
+                }
+                
+                .company__image {
+                    justify-content: flex-end;
+                    img {
+                        width: 550px;
+                        height: 550px;
+                    }
+                }
+            }
+        }
+    }
+
+    .widget {
+        span {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #fff;
+            font-size: 30px;
+        }
+
+        .witget__title {
+            color: #fff;
+            font-size: 22px;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        .widget__balanc {
+            color: #fff;
+            font-size: 32px;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+    }
+}
+@media (min-width: 767.99px) and (max-width: 991.99px) {
+    .main__form__section {
+        height: 100%;
+        padding: 120px 0;
+        .container {
+            .form__block {
+                display: block;
+                
+                .forms {
+                    order: 2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    div {
+                        .title {
+                            font-size: 45px;
+                            text-align: center;
+                        }
+                    }
+                }
+                
+                .company__image {
+                    order: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 550px;
+                        height: 550px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 575.99px) and (max-width: 767.99px) {
+    .main__form__section {
+        height: 100%;
+        padding: 120px 0;
+        .container {
+            .form__block {
+                display: block;
+                
+                .forms {
+                    order: 2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    div {
+                        .title {
+                            font-size: 45px;
+                            text-align: center;
+                        }
+                    }
+                }
+                
+                .company__image {
+                    order: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 550px;
+                        height: 550px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 479.99px) and (max-width: 575.99px) {
+    .main__form__section {
+        height: 100%;
+        padding: 120px 0;
+        .container {
+            .form__block {
+                display: block;
+                
+                .forms {
+                    order: 2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    div {
+                        .title {
+                            font-size: 45px;
+                            text-align: center;
+                        }
+                    }
+                }
+                
+                .company__image {
+                    order: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 450px;
+                        height: 450px;
+                    }
+                }
+            }
+        }
+    }
+}
+    @media (max-width: 479.99px) {
+    .main__form__section {
+        height: 100%;
+        padding: 120px 0;
+        .container {
+            .form__block {
+                display: block;
+                
+                .forms {
+                    order: 2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0 30px;
+                    div {
+                        .title {
+                            font-size: 45px;
+                            text-align: center;
+                        }
+                    }
+                }
+                
+                .company__image {
+                    order: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 400px;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+/****************************************************************
+    responsive styles end
+*****************************************************************/
+

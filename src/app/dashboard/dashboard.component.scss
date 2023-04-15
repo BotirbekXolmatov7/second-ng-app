@@ -1,0 +1,256 @@
+.main__dashboard {
+    padding: 30px;
+    background-color: #f0f5fc;
+    border-radius: 30px;
+}
+
+.inner-box {
+    padding: 40px 30px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+
+    .circle__one {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgba($color: #ffffff, $alpha: 0.4);
+        position: absolute;
+        top: 45px;
+        right: 125px;
+    }
+    .circle__two {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        background-color: rgba($color: #ffffff, $alpha: 0.4);
+        position: absolute;
+        top: -20px;
+        right: -55px;
+    }
+    .circle__three {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        background-color: rgba($color: #ffffff, $alpha: 0.4);
+        position: absolute;
+        bottom: -65px;
+        right: -8px;
+    }
+
+    &.green {
+        background: linear-gradient(90deg, #5ce5ce 0%, #30baa3 100%);
+    }
+    &.orange {
+        background: linear-gradient(90deg, #f99566 0%, #f3554d 100%);
+    }
+    &.blue {
+        background: linear-gradient(90deg, #8cc1f9 0%, #167cf2 100%);
+    }
+    &.purple {
+        background: linear-gradient(90deg, #c991f7 0%, #8a68ea 100%);
+    }
+
+    .widget {
+        span {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #fff;
+            font-size: 30px;
+        }
+
+        .witget__title {
+            color: #fff;
+            font-size: 22px;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        .widget__balanc {
+            color: #fff;
+            font-size: 30px;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.chart-container {
+    margin-bottom: 60px;
+}
+
+.calendar__wrapper {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+/****************************************************************
+    responsive styles start
+*****************************************************************/
+@media (min-width: 1399.99px) and (max-width: 1599.99px) {
+    .inner-box {
+        padding: 40px 30px;
+
+        .widget {
+            span {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                color: #fff;
+                font-size: 30px;
+            }
+
+            .witget__title {
+                color: #fff;
+                font-size: 20px;
+                letter-spacing: 1px;
+                margin-bottom: 0px;
+            }
+            .widget__balanc {
+                color: #fff;
+                font-size: 25px;
+                letter-spacing: 1px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+@media (min-width: 1199.99px) and (max-width: 1399.99px) {
+    .inner-box {
+        padding: 30px 20px;
+        .circle__one {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: rgba($color: #ffffff, $alpha: 0.4);
+            position: absolute;
+            top: 35px;
+            right: 85px;
+        }
+        .circle__two {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: rgba($color: #ffffff, $alpha: 0.4);
+            position: absolute;
+            top: -0px;
+            right: -15px;
+        }
+        .circle__three {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgba($color: #ffffff, $alpha: 0.4);
+            position: absolute;
+            bottom: -20px;
+            right: -10px;
+        }
+        .widget {
+            span {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                color: #fff;
+                font-size: 25px;
+            }
+
+            .witget__title {
+                color: #fff;
+                font-size: 20px;
+                letter-spacing: 1px;
+                margin-bottom: 5px;
+            }
+            .widget__balanc {
+                color: #fff;
+                font-size: 22px;
+                letter-spacing: 1px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+@media (min-width: 991.99px) and (max-width: 1199.99px) {
+    .inner-box {
+        padding: 30px 20px;
+        border-radius: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+
+        .circle__one {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: rgba($color: #ffffff, $alpha: 0.4);
+            position: absolute;
+            top: 30px;
+            right: 65px;
+        }
+        .circle__two {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: rgba($color: #ffffff, $alpha: 0.4);
+            position: absolute;
+            top: -0px;
+            right: -15px;
+        }
+        .circle__three {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: rgba($color: #ffffff, $alpha: 0.4);
+            position: absolute;
+            bottom: -12px;
+            right: -10px;
+        }
+
+        .widget {
+            span {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                color: #fff;
+                font-size: 25px;
+            }
+
+            .witget__title {
+                color: #fff;
+                font-size: 16px;
+                letter-spacing: 1px;
+                margin-bottom: 0px;
+            }
+            .widget__balanc {
+                color: #fff;
+                font-size: 18px;
+                letter-spacing: 1px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+@media (min-width: 767.99px) and (max-width: 991.99px) {
+    .calendar__wrapper {
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 575.99px) and (max-width: 767.99px) {
+      .calendar__wrapper {
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 479.99px) and (max-width: 575.99px) {
+      .calendar__wrapper {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 479.99px) {
+    .calendar__wrapper {
+        margin-bottom: 30px;
+    }
+}
+/****************************************************************
+    responsive styles end
+*****************************************************************/
