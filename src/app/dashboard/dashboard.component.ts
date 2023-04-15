@@ -13,7 +13,7 @@ export class DashboardComponent implements OnInit {
       type: 'line', //this denotes tha type of chart
 
       data: {// values on X-Axis
-        labels: ['24.01', '24.01', '24.01', '24.01', '24.01', '24.01', '24.01', '24.01',],
+        labels: ['24.01', '24.01', '24.01', '24.01', '24.01', '24.01', '24.01', '24.01', ''],
         datasets: [
           {
             label: "HR",
