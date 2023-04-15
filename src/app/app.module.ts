@@ -19,6 +19,7 @@ import { TodoComponent } from './todo/todo.component';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
 registerLocaleData(en);
 
 @NgModule({
@@ -40,7 +41,8 @@ registerLocaleData(en);
     NzCalendarModule,
     NzInputModule,
     NzTableModule,
-    NzTabsModule
+    NzTabsModule,
+    NzLayoutModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }
